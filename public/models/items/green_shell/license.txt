@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mario Kart Green Shell
+* source:	https://sketchfab.com/3d-models/mario-kart-green-shell-7ce07237c6924106a40237bbe69ed9a6
+* author:	NoomShoor (https://sketchfab.com/NoomShoor)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mario Kart Green Shell" (https://sketchfab.com/3d-models/mario-kart-green-shell-7ce07237c6924106a40237bbe69ed9a6) by NoomShoor (https://sketchfab.com/NoomShoor) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

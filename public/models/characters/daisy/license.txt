@@ -1,0 +1,11 @@
+Model Information:
+* title:	DS DSi - Mario Kart DS - Daisy
+* source:	https://sketchfab.com/3d-models/ds-dsi-mario-kart-ds-daisy-dc23ec111cfa4bebab0f3f8e03846fc4
+* author:	Waffles (https://sketchfab.com/jkimmel694)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DS DSi - Mario Kart DS - Daisy" (https://sketchfab.com/3d-models/ds-dsi-mario-kart-ds-daisy-dc23ec111cfa4bebab0f3f8e03846fc4) by Waffles (https://sketchfab.com/jkimmel694) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

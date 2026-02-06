@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rainbow Road 64
+* source:	https://sketchfab.com/3d-models/rainbow-road-64-4b8ea7043387429a95cb96da2a4a572b
+* author:	jameslucino117 (https://sketchfab.com/jameslucino117)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rainbow Road 64" (https://sketchfab.com/3d-models/rainbow-road-64-4b8ea7043387429a95cb96da2a4a572b) by jameslucino117 (https://sketchfab.com/jameslucino117) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,94 @@
+@import "../../../styles/utils/utils";
+
+.waitingroom {
+  background-image: url("../../../../public/images/welcome_bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    font-family: $fontMario;
+    font-size: 65px;
+    margin-top: -35px;
+    filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black)
+      drop-shadow(1px -1px 1px black) drop-shadow(-1px 1px 1px black);
+
+    span {
+      &:nth-of-type(1) {
+        color: #ff261b;
+      }
+      &:nth-of-type(2) {
+        color: #00b33c;
+      }
+      &:nth-of-type(3) {
+        color: #ffd300;
+      }
+      &:nth-of-type(4) {
+        color: #00a2de;
+      }
+      &:nth-of-type(5) {
+        color: #00b33c;
+      }
+      &:nth-of-type(7) {
+        color: #ffd300;
+      }
+      &:nth-of-type(8) {
+        color: #ff261b;
+      }
+      &:nth-of-type(9) {
+        color: #00b33c;
+      }
+      &:nth-of-type(10) {
+        color: #ffd300;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0; 
+    margin-bottom: 30px; 
+  }
+
+  &_ctn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  &_form {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 570px;
+    font-family: $fontDefault;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-family: $fontDefault;
+      gap: 15px;
+      font-size: 20px;
+      border-bottom: 1px dashed white;
+      padding: 10px 0;
+
+      &:first-of-type {
+        border-top: 1px dashed white;
+      }
+    }
+  }
+}

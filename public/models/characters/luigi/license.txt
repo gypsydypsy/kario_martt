@@ -1,0 +1,11 @@
+Model Information:
+* title:	DS DSi - Mario Kart DS - Luigi
+* source:	https://sketchfab.com/3d-models/ds-dsi-mario-kart-ds-luigi-8c50948b6ebd4efebf8d8bcd7c6d1547
+* author:	Waffles (https://sketchfab.com/jkimmel694)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DS DSi - Mario Kart DS - Luigi" (https://sketchfab.com/3d-models/ds-dsi-mario-kart-ds-luigi-8c50948b6ebd4efebf8d8bcd7c6d1547) by Waffles (https://sketchfab.com/jkimmel694) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

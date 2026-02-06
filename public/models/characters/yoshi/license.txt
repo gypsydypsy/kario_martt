@@ -1,0 +1,11 @@
+Model Information:
+* title:	DS DSi - Mario Kart DS - Yoshi
+* source:	https://sketchfab.com/3d-models/ds-dsi-mario-kart-ds-yoshi-b13539dd84584523b83339b035c1c48b
+* author:	Fortnite (https://sketchfab.com/jkimmel694)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DS DSi - Mario Kart DS - Yoshi" (https://sketchfab.com/3d-models/ds-dsi-mario-kart-ds-yoshi-b13539dd84584523b83339b035c1c48b) by Fortnite (https://sketchfab.com/jkimmel694) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

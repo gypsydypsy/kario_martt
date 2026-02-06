@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wii U - Mario Kart 8 - Toad Harbor
+* source:	https://sketchfab.com/3d-models/wii-u-mario-kart-8-toad-harbor-97681cab2c9445069b335e940116562f
+* author:	H,yoshi (https://sketchfab.com/HY2245)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wii U - Mario Kart 8 - Toad Harbor" (https://sketchfab.com/3d-models/wii-u-mario-kart-8-toad-harbor-97681cab2c9445069b335e940116562f) by H,yoshi (https://sketchfab.com/HY2245) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

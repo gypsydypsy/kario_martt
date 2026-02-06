@@ -1,0 +1,27 @@
+CSS / inté : 
+Ecrans intro + waiting room + résultat
+panneau info commande
+styliser loader
+
+
+Mécanique jeu : 
+décompte + fin de jeu
+Positionnement de départ jusqu'à 6 joueurs 
+
+
+3D : 
+oumpalompa
+Améliorer shader Bomb
+Customisation KART 
+Customisation Circuit
+
+Peut etre : 
+choix solo / multijoueur
+lerp caméra ? 
+
+Bugs :
+comptate de tours buggé ==> Empecher le bug recul sur la ligne d'arrivée
+page d'erreur ?
+problème sensibilité pièges (bombe surtout)
+problème position voiture (lévitation ?!)
+

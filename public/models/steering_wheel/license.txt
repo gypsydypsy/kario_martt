@@ -1,0 +1,11 @@
+Model Information:
+* title:	steering wheel L505
+* source:	https://sketchfab.com/3d-models/steering-wheel-l505-3d204d99f5184df4901dd9b1d0ec3c84
+* author:	Ahmed Aman (https://sketchfab.com/ahmedaman2)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "steering wheel L505" (https://sketchfab.com/3d-models/steering-wheel-l505-3d204d99f5184df4901dd9b1d0ec3c84) by Ahmed Aman (https://sketchfab.com/ahmedaman2) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

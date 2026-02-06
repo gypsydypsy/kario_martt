@@ -1,0 +1,30 @@
+@import '../../../styles/utils/utils';
+
+.rank {
+    position: fixed; 
+    z-index: 10; 
+    bottom: 10px; 
+    left: 30px; 
+
+    span {
+        font-family: $fontMario;
+        font-size: 150px; 
+        color: #853a01; 
+    }
+    
+    &[data-pos='1']{
+        span {
+            color: #d3AF37; 
+        }
+    }
+    &[data-pos="2"]{
+        span {
+            color: #DEDEDE; 
+        }
+    }
+    &[data-pos="3"]{
+        span {
+            color: #CE8946;
+        }
+    }
+}

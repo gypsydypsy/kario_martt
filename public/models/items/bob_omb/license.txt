@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wii - Mario Kart Wii - Bob-omb
+* source:	https://sketchfab.com/3d-models/wii-mario-kart-wii-bob-omb-f22271b760bc49e1bfbc329cc837c4c7
+* author:	Waffles (https://sketchfab.com/jkimmel694)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wii - Mario Kart Wii - Bob-omb" (https://sketchfab.com/3d-models/wii-mario-kart-wii-bob-omb-f22271b760bc49e1bfbc329cc837c4c7) by Waffles (https://sketchfab.com/jkimmel694) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

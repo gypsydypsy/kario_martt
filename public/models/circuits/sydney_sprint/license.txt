@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sydney Sprint
+* source:	https://sketchfab.com/3d-models/sydney-sprint-37981e6ff05a4770a23a7ea55fa096ae
+* author:	DoodleDoo2 (https://sketchfab.com/DoodleDoo2)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sydney Sprint" (https://sketchfab.com/3d-models/sydney-sprint-37981e6ff05a4770a23a7ea55fa096ae) by DoodleDoo2 (https://sketchfab.com/DoodleDoo2) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

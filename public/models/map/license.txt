@@ -1,0 +1,11 @@
+Model Information:
+* title:	F1 Bahrain lowpoly circuit
+* source:	https://sketchfab.com/3d-models/f1-bahrain-lowpoly-circuit-62181151f9f44d71af3819ec8c63fde2
+* author:	rickythunder (https://sketchfab.com/rickythunder)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "F1 Bahrain lowpoly circuit" (https://sketchfab.com/3d-models/f1-bahrain-lowpoly-circuit-62181151f9f44d71af3819ec8c63fde2) by rickythunder (https://sketchfab.com/rickythunder) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

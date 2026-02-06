@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mario Kart 8 Deluxe - DS Mario Circuit
+* source:	https://sketchfab.com/3d-models/mario-kart-8-deluxe-ds-mario-circuit-dcedf01024f74b30b1ac705c20fd50e8
+* author:	H,yoshi (https://sketchfab.com/HY2245)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mario Kart 8 Deluxe - DS Mario Circuit" (https://sketchfab.com/3d-models/mario-kart-8-deluxe-ds-mario-circuit-dcedf01024f74b30b1ac705c20fd50e8) by H,yoshi (https://sketchfab.com/HY2245) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
