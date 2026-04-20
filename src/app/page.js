@@ -47,6 +47,7 @@ export default function Home() {
       updatePlayers(players);
     });
     socket.on("gameUpdate", (data) => {
+      console.log(data)
       updatePlayers(data.players);
       setGameStarted(data.game.started);
     });
@@ -72,7 +73,8 @@ export default function Home() {
     });
   };
 
-  const handleStartGame = () => {
+  const handleStartGame = (e) => {
+    e.preventDefault();
     socket.emit("startGame");
   };
 

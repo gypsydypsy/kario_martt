@@ -42,7 +42,7 @@ const Scene = () => {
 
     let newModels = [];
     modelsConfig.forEach((model) => {
-      loader.load(`${process.env.NEXT_PUBLIC_FRONTEND}${model.url}`, (gltf) => {
+      loader.load(`${process.env.NEXT_PUBLIC_FRONTEND}/${model.url}`, (gltf) => {
         const scene = gltf.scene;
         const box = new THREE.Box3().setFromObject(scene);
         const center = new THREE.Vector3();

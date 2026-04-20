@@ -2,6 +2,7 @@ import { useGameStore } from "@/store/store";
 import styles from "./waitingroom.module.scss";
 import charactersConfig from "@/config/characters";
 import Image from "next/image";
+
 const WaitingRoom = ({ handleStartGame }) => {
   const { localPlayer, players } = useGameStore();
 
