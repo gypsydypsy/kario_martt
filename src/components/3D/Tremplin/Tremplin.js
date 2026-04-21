@@ -7,16 +7,17 @@ import { useGameStore } from "@/store/store";
 const Tremplin = ({ position, rotation }) => {
   const tremplinRef = useRef();
   const { models } = useGameStore();
-  
-   useEffect(() => {
-      const model = models.find(model => model.name === 'tremplin')
-    
-      if(model){
-        const object = model.scene.clone()
-        tremplinRef.current.add(object)
-      }
+
+  useEffect(() => {
+    const model = models.find(model => model.name === 'tremplin')
+
+    if (model) {
+      const object = model.scene.clone()
+      object.rotation.set(0, 0, 0)
+      tremplinRef.current.add(object)
+    }
   }, [models]);
-  
+
   return (
     <RigidBody
       position={position}
@@ -26,15 +27,14 @@ const Tremplin = ({ position, rotation }) => {
       userData={{ isSpeed: true, speedFactor: 1 }}
     >
       <CuboidCollider
-        rotation={[0, -rotation[1], -0.41 * Math.PI]}
+        rotation={[0, 0, 1.3]}
         args={[0.05, 1.15, 3.65]}
       />
       <CuboidCollider
-        position={[-0.8, 0, 0.8]}
-        rotation={[0, -rotation[1], 0]}
+        position={[-.8, 0, 0.]}
         args={[0.05, 0.2, 3.65]}
       />
-      <group scale={0.06} ref={tremplinRef} />
+      <group scale={0.06} ref={tremplinRef} rotation={[0, -0.7, 0]}/>
     </RigidBody>
   );
 };

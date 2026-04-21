@@ -22,7 +22,7 @@ const Accelerator = ({ position, rotation }) => {
       rotation={rotation}
       colliders={false}
       type="fixed"
-      userData={{ isSpeed: true, speedFactor: 3 }}
+      userData={{ isSpeed: true, speedFactor: 1.5 }}
     >
       <CuboidCollider
         rotation={[0, 0 * Math.PI, 0.5 * Math.PI]}
@@ -32,7 +32,7 @@ const Accelerator = ({ position, rotation }) => {
       <group
         scale={0.06}
         ref={acceleratorRef}
-        rotation={[0.088 * Math.PI, 0.21 * Math.PI, 0.865 * Math.PI]} // Ajuste cette rotation si nécessaire
+        rotation={[0.088 * Math.PI, 0.21 * Math.PI, 0.865 * Math.PI]}
       />
     </RigidBody>
   );

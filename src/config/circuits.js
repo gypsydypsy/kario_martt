@@ -59,29 +59,89 @@ const circuitsConfig = [
     props: [
       {
         type: "itembox",
-        position: [80, -23.1, -25],
+        position: [90, -23.1, -19],
+        rotation: [0, 0, 0]
+      },
+      {
+        type: "itembox",
+        position: [90, -23.1, -24],
+        rotation: [0, 0, 0]
+      },
+      {
+        type: "itembox",
+        position: [90, -23.1, -29],
+        rotation: [0, 0, 0]
+      },
+      {
+        type: "accelerator",
+        position: [65, -22.95, -23.5],
+        rotation: [0, 0, 0]
+      },
+      {
+        type: "thwomp",
+        position: [192, -14.2, -100],
+        rotation: [0, 0, 0]
+      },
+       {
+        type: "thwomp",
+        position: [198, -14.2, -100],
+        rotation: [0, 0, 0]
+      },
+       {
+        type: "thwomp",
+        position: [204, -14.2, -100],
         rotation: [0, 0, 0]
       },
       {
         type: "tremplin",
-        position: [100, -22.6, -25],
-        rotation: [0, Math.PI * 0.77, 0]
+        position: [87, -11.05, -130],
+        rotation: [0, 0.28 * Math.PI, 0]
+      },
+        {
+        type: "itembox",
+        position: [-68, -11, 40],
+        rotation: [0, 0.8, 0]
       },
       {
-        type: "accelerator",
-        position: [120, -22.43, -25],
+        type: "itembox",
+        position: [-72, -11, 37],
+        rotation: [0, 0.8, 0]
+      },
+      {
+        type: "itembox",
+        position: [-75.5, -11, 33.5],
+        rotation: [0, 0.8, 0]
+      },
+       {
+        type: "thwomp",
+        position: [-173, -11, 21],
+        rotation: [0, -0.2, 0]
+      },
+       {
+        type: "thwomp",
+        position: [-180, -11, 20],
+        rotation: [0, -0.2, 0]
+      },
+       {
+        type: "thwomp",
+        position: [-187, -11, 18],
+        rotation: [0, -0.2, 0]
+      },
+       {
+        type: "itembox",
+        position: [-100, -21.67, -19],
         rotation: [0, 0, 0]
       },
       {
-        type: "thwomp",
-        position: [70, -20.5, -30],
-        rotation: [0, -0.5 * Math.PI, 0]
+        type: "itembox",
+        position: [-100, -21.67, -24],
+        rotation: [0, 0, 0]
       },
       {
-        type: "thwomp",
-        position: [80, -20.5, -30],
-        rotation: [0, -0.5 * Math.PI, 0]
-      }
+        type: "itembox",
+        position: [-100, -21.67, -29],
+        rotation: [0, 0, 0]
+      },
     ]
   },
   {
