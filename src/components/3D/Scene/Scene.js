@@ -20,7 +20,7 @@ import circuitsConfig from "@/config/circuits";
 import modelsConfig from "@/config/models";
 import Props from "../Props/Props";
 
-const DEBUG = true;
+const DEBUG = false;
 const CAMERA_DEBUG = false;
 
 const Scene = () => {
