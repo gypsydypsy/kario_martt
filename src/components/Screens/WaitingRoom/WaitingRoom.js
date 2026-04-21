@@ -18,7 +18,6 @@ const WaitingRoom = ({ handleStartGame }) => {
           <h2>Liste des joueurs</h2>
           <ul>
             {players.map((player) => {
-              console.log(player)
               return (
                 <li key={player.id}>
                   <Image src={charactersConfig.find( char => char.name === player.character)?.thumbnail} height={50} width={50} alt={player.character} />

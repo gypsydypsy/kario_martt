@@ -47,7 +47,6 @@ export default function Home() {
       updatePlayers(players);
     });
     socket.on("gameUpdate", (data) => {
-      console.log(data)
       updatePlayers(data.players);
       setGameStarted(data.game.started);
     });

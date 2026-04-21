@@ -15,7 +15,7 @@ const NBR_POINTS = 100;
 const Minimap = () => {
   const { circuit, rank, updateRank, localPlayer, players } = useGameStore();
   const [playersProgress, setPlayersProgress] = useState([]);
-  const pathPoints = useRef();
+  const [pathPoints, setPathPoints] = useState([])
   const pathRef = useRef();
   const playersRef = useRef([]);
   const playersLap = useRef([...players.map((el) => ({ id: el.id, lap: 0 }))]);
@@ -50,18 +50,15 @@ const Minimap = () => {
   };
 
   useEffect(() => {
-    if (circuit.curve) {
-      pathPoints.current = generateSVGfromCurve(circuit.curve);
-    }
-  }, [circuit]);
-
-  useEffect(() => {
     if (circuit.curve && circuit.length) {
+      setPathPoints(generateSVGfromCurve(circuit.curve));
+
       const handler = (players) => {
         // Get each players progression
         let progressArray = [];
 
         const getPlayerProgress = (position, id, name) => {
+
           let { curve, length } = circuit;
           const points = curve.getSpacedPoints(NBR_POINTS);
           let closestDist = Infinity;
@@ -101,9 +98,9 @@ const Minimap = () => {
 
           let totalProgress =
             currentLap === 0 ? 0 : currentLap * length + u * length;
-     
+
           return totalProgress;
-        };
+        }
 
         players.forEach((player) => {
           if (player.position) {
@@ -115,20 +112,20 @@ const Minimap = () => {
             progressArray.push({ player, progress });
           }
         });
-
         setPlayersProgress(progressArray);
+
       };
+
       socket.on("updatePlayers", handler);
 
       return () => {
         socket.off("updatePlayers", handler);
       };
     }
-  }, [socket, circuit]);
+  }, [circuit]);
 
   useEffect(() => {
     /* Update characters position on mini map */
-
     if (
       playersProgress.length &&
       circuit.length &&
@@ -160,22 +157,22 @@ const Minimap = () => {
         updateRank(newRank);
       }
     }
-  }, [playersProgress]);
+  }, [playersProgress, circuit]);
 
   return (
     <div className={styles.minimap}>
-      {pathPoints.current && (
+      {pathPoints.length > 0 && (
         <svg width={220} height={220} style={{}}>
           <path
             ref={pathRef}
-            d={pathPoints.current}
+            d={pathPoints}
             fill="none"
             stroke="white"
             strokeWidth={2}
           />
         </svg>
       )}
-      {playersProgress.length &&
+      {playersProgress.length > 0 &&
         playersProgress.map((item, index) => {
           const thumbnail = charactersConfig.find(
             (el) => el.name === item.player.character

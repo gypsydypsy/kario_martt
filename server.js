@@ -73,7 +73,7 @@ app.prepare().then(() => {
         rotation: rotation,
       };
       players[index] = updatedPlayer;
-      socket.broadcast.emit("updatePlayers", players);
+      socket.emit("updatePlayers", players);
     });
 
     socket.on("addTrap", (trap) => {
