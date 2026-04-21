@@ -10,13 +10,29 @@ const circuitsConfig = [
     },
     players: [
       {
-        position: [40, -23, -24],
+        position: [40, -23, -29],
         rotation: [0, -Math.PI, 0],
       },
       {
-        position: [30, -23, -24],
+        position: [38, -23, -24.5],
         rotation: [0, -Math.PI, 0],
       },
+      {
+        position: [36, -23, -20],
+        rotation: [0, -Math.PI, 0],
+      },
+      {
+        position: [34, -23, -29],
+        rotation: [0, -Math.PI, 0],
+      },
+      {
+        position: [32, -23, -24.5],
+        rotation: [0, -Math.PI, 0],
+      },
+      {
+        position: [30, -23, -20],
+        rotation: [0, -Math.PI, 0],
+      }
     ],
     curvePoints: [
       new THREE.Vector3(44.5, -23.15, -24),
@@ -40,30 +56,30 @@ const circuitsConfig = [
       new THREE.Vector3(-118, -20.5, -23),
       new THREE.Vector3(40, -23.15, -24),
     ],
-    props : [
+    props: [
       {
-        type: "itembox", 
+        type: "itembox",
         position: [80, -23.1, -25],
         rotation: [0, 0, 0]
-      }, 
+      },
       {
-        type: "tremplin", 
-        position: [100, -22.6, -25], 
+        type: "tremplin",
+        position: [100, -22.6, -25],
         rotation: [0, Math.PI * 0.77, 0]
-      }, 
+      },
       {
-        type: "accelerator", 
-        position: [120, -22.43, -25], 
+        type: "accelerator",
+        position: [120, -22.43, -25],
         rotation: [0, 0, 0]
-      }, 
-      { 
-        type: "thwomp", 
+      },
+      {
+        type: "thwomp",
         position: [70, -20.5, -30],
         rotation: [0, -0.5 * Math.PI, 0]
       },
       {
-        type: "thwomp", 
-        position: [80, -20.5, -30], 
+        type: "thwomp",
+        position: [80, -20.5, -30],
         rotation: [0, -0.5 * Math.PI, 0]
       }
     ]
