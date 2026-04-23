@@ -33,8 +33,13 @@ const Scene = () => {
     updatePlayers,
     localPlayer,
     updateLocalPlayer,
-    circuit
+    circuit,
+    models,
   } = useGameStore();
+
+  const currentCircuitModel = models.find(
+    (model) => model.name === currentCircuit?.name
+  );
 
   useEffect(() => {
     /* Load Models */
@@ -89,7 +94,7 @@ const Scene = () => {
 
   return (
     <>
-      {currentCircuit !== null && isLoaded && localPlayer.order !== null ? (
+      {currentCircuit !== null && isLoaded && currentCircuitModel && localPlayer.order !== null ? (
         <div className={styles.scene}>
           <Canvas>
             {CAMERA_DEBUG && (
@@ -100,7 +105,11 @@ const Scene = () => {
             <ambientLight intensity={1} />
 
             <Physics gravity={[0, -9.08, 0]} debug={DEBUG}>
-              <Circuit scale={currentCircuit.circuit.scale} name={currentCircuit.name} points={currentCircuit.curvePoints} />
+              <Circuit
+                model={currentCircuitModel}
+                scale={currentCircuit.circuit.scale}
+                points={currentCircuit.curvePoints}
+              />
               <Ground position={[0, -23.25, -20]} />
               <Traps />
               <Props elements={currentCircuit.props}/>

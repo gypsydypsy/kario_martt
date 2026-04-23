@@ -5,35 +5,34 @@ import * as THREE from 'three';
 
 const VISUALIZE_CURVE = false;
 
-const Circuit = ({ name, scale, points }) => {
-  const { models, circuit, updateCircuit } = useGameStore();
+const Circuit = ({ model, scale, points }) => {
+  const { circuit, updateCircuit } = useGameStore();
   const circuitref = useRef();
 
   useEffect(() => {
     const curve = new THREE.CatmullRomCurve3(points, false);
     const length = curve.getLength();
 
-    if(VISUALIZE_CURVE){
-      const points = curve.getPoints(50); 
-      const geometry = new THREE.BufferGeometry().setFromPoints(points); 
-      const material = new THREE.LineBasicMaterial({ color: 0xffffff}); 
-      const object = new THREE.Line(geometry, material); 
-      circuitref.current.add(object)
+    if (VISUALIZE_CURVE) {
+      const debugPoints = curve.getPoints(50);
+      const geometry = new THREE.BufferGeometry().setFromPoints(debugPoints);
+      const material = new THREE.LineBasicMaterial({ color: 0xffffff });
+      const object = new THREE.Line(geometry, material);
+      circuitref.current.add(object);
     }
-    updateCircuit({...circuit, length, curve})
-  }, []);
 
-  useEffect(() => {
-    const model = models.find((model) => model.name === name);
+    updateCircuit({ ...circuit, length, curve });
+  }, [points]);
 
-    if (model) {
-      circuitref.current.add(model.scene);
-    }
-  }, [models]);
+  if (!model) {
+    return null;
+  }
 
   return (
     <RigidBody type="fixed" colliders="trimesh">
-      <group scale={scale} ref={circuitref} />
+      <group scale={scale} ref={circuitref}>
+        <primitive object={model.scene} />
+      </group>
     </RigidBody>
   );
 };
