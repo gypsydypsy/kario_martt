@@ -23,6 +23,9 @@ const SUSPENSION_REST_LENGTH = 0.08;
 const SUSPENSION_STIFFNESS = 24;
 const SUSPENSION_MAX_TRAVEl = 1;
 
+const IDLENESS_THRESHOLD = 60 * 5;
+
+
 const wheelsConfig = [
   {
     name: "RIGHT_FRONT",
@@ -74,7 +77,7 @@ const LocalPlayer = ({
   cameraDebug,
   debug,
 }) => {
-  const { models, gift, updateGift, circuit } = useGameStore();
+  const { models, gift, updateGift, circuit, idleness, updateIdleness } = useGameStore();
 
   /* Character config */
   const charConfig = charactersConfig.find((el) => el.name === character);
@@ -97,6 +100,9 @@ const LocalPlayer = ({
   const [_, getKeys] = useKeyboardControls();
   const { vehicleController } = useVehicle(bodyRef, wheelsRef, wheelsConfig);
   const { world } = useRapier();
+
+  /* Idleness */
+  const idlenessCount = useRef(0);
 
   /* Add models */
   useEffect(() => {
@@ -375,6 +381,29 @@ const LocalPlayer = ({
       }
 
       updateGift(null);
+    }
+
+    /* Idleness */
+    const velocity = chassis.linvel();
+    const speedSq =
+      velocity.x * velocity.x +
+      velocity.y * velocity.y +
+      velocity.z * velocity.z;
+
+    const isStopped = speedSq < 0.0001; // seuil à ajuster
+    const hasInput = forward || backward || leftward || rightward || brake;
+
+    if (!hasInput || isStopped) {
+      idlenessCount.current += 1;
+    } else {
+      idlenessCount.current = 0;
+    }
+
+    if (idlenessCount.current > IDLENESS_THRESHOLD) {
+      updateIdleness(true)
+    }
+    else if (idleness === true) {
+      updateIdleness(false)
     }
 
     /* Socket update */

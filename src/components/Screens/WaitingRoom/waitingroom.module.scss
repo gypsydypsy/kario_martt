@@ -1,4 +1,5 @@
 @import "../../../styles/utils/utils";
+@import "../../../styles//utils/animation.scss"; 
 
 .waitingroom {
   background-image: url("../../../../public/images/welcome_bg.jpeg");
@@ -154,17 +155,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes flash {
-  0% {
-    opacity: 1
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

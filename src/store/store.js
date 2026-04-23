@@ -25,4 +25,6 @@ export const useGameStore = create((set) => ({
   updateRank: (value) => set({ rank: value }),
   lap: 0,
   updateLap: (value) => set({ lap: value }),
+  idleness: false,
+  updateIdleness: (value) => set({ idleness: value })
 }));

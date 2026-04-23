@@ -1,0 +1,13 @@
+@import "../../../styles//utils/animation.scss"; 
+
+.debug {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; 
+    padding: 5px 30px; 
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; 
+}
