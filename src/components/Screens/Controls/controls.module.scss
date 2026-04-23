@@ -1,0 +1,163 @@
+@import "../../../styles/utils/utils";
+
+.controls {
+    background-image: url("../../../../public/images/welcome_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2vh 0; 
+    color: white; 
+
+    h1 {
+        text-align: center;
+        font-family: $fontMario;
+        font-size: 8vh;
+        margin-bottom: 3vh; 
+        margin-top: 0; 
+
+        filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black)
+        drop-shadow(1px -1px 1px black) drop-shadow(-1px 1px 1px black);
+
+        span {
+            &:nth-of-type(1) {
+                color: #ff261b;
+            }
+            &:nth-of-type(2) {
+                color: #00b33c;
+            }
+            &:nth-of-type(3) {
+                color: #ffd300;
+            }
+            &:nth-of-type(4) {
+                color: #00a2de;
+            }
+            &:nth-of-type(5) {
+                color: #00b33c;
+            }
+            &:nth-of-type(7) {
+                color: #ffd300;
+            }
+            &:nth-of-type(8) {
+                color: #ff261b;
+            }
+            &:nth-of-type(9) {
+                color: #00b33c;
+            }
+            &:nth-of-type(10) {
+                color: #ffd300;
+            }
+        }
+    }
+
+    &_ctn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &_pannel {
+        padding: 4vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: solid 2px rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        width: calc(63vh + 20px);
+        height: 65vh; 
+        margin: auto; 
+
+        h2 {
+            font-size: 2.5vh;
+            font-weight: normal;
+            margin-top: 0; 
+            margin-bottom: 1.5vh; 
+            font-family: 'Roboto';
+        }
+
+         ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-family: $fontDefault;
+                gap: 2vh;
+                font-size: 2.2vh;
+                border-bottom: 1px dashed white;
+                padding: 1vh 0;
+
+                &:first-of-type {
+                    border-top: 1px dashed white;
+                }
+
+                img {
+                    width: auto; 
+                    max-height: 10vh; 
+                }
+
+                &:nth-of-type(2){
+                    img {
+                        max-height: 5vh;
+                        width: 15vh; 
+                    }
+                }
+
+                &:last-of-type{
+                    position: relative; 
+                
+                    &:after {
+                        position: absolute; 
+                        content: ''; 
+                        top: -2px; 
+                        left: -10px; 
+                        height: 100%; 
+                        width: calc(100% + 20px); 
+                        border: solid 2px red; 
+                        border-radius: 5px; 
+                    }
+                }
+            }
+        }
+    }
+
+    &_submit {
+    margin-top: 3vh;
+
+    button {
+    color: white;
+    font-family: $fontMario;
+    font-size: 7vh;
+    padding: 1vh 2vh;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px rgba(255, 255, 255, 0.8);
+    display: block;
+    margin: auto;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    span {
+        filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black)
+        drop-shadow(1px -1px 1px black) drop-shadow(-1px 1px 1px black);
+        &:nth-of-type(1) {
+        color: #ff261b;
+        }
+        &:nth-of-type(2) {
+        color: #ffd300;
+        }
+        &:nth-of-type(4) {
+        color: #00b33c;
+        }
+    }
+    }
+    }   
+}

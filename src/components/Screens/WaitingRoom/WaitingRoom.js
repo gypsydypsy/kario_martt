@@ -15,23 +15,34 @@ const WaitingRoom = ({ handleStartGame }) => {
           ))}
         </h1>
         <div className={styles.waitingroom_form}>
-          <h2>Liste des joueurs</h2>
+          <h2>Liste des joueurs : </h2>
           <ul>
             {players.map((player) => {
               return (
                 <li key={player.id}>
-                  <Image src={charactersConfig.find( char => char.name === player.character)?.thumbnail} height={50} width={50} alt={player.character} />
+                  <Image src={charactersConfig.find(char => char.name === player.character)?.thumbnail} height={50} width={50} alt={player.character} />
                   <span>{player.name}{player.isHost && " (hôte)"}</span>
                 </li>
               );
             })}
           </ul>
-          {localPlayer.isHost ? (
-            <button>Start Game</button>
-          ) : (
-            <p>En attente de nouveaux joueurs...</p>
-          )}
+          <p className={styles.waitingroom_info}>
+            {players.length < 6 &&
+              <>
+                {localPlayer.isHost ?
+                  "Attendez de nouveaux joueurs ou démarrez la partie" : "Attendez que l'hôte démarre la partie"
+                }
+              </>
+            }
+          </p>
         </div>
+        {localPlayer.isHost && (
+          <div className={styles.waitingroom_submit}>
+            <button>  {"Start".split("").map((char, index) => (
+              <span key={index}>{char}</span>
+            ))}</button>
+          </div>
+        )}
       </form>
     </div>
   );

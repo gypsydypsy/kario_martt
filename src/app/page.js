@@ -13,6 +13,7 @@ export default function Home() {
   const { localPlayer, updateLocalPlayer, updatePlayers } = useGameStore();
   const [gameStarted, setGameStarted] = useState(false);
   const [error, setError] = useState("");
+  const [showLobby, setShowLobby] = useState(false); 
 
   useEffect(() => {
     if (IS_MULTIPLAYER) {
@@ -79,17 +80,9 @@ export default function Home() {
 
   return (
     <>
-      {gameStarted && localPlayer.id ? (
-        <Game />
-      ) : (
-        <>
-          {localPlayer.id ? (
-            <WaitingRoom handleStartGame={handleStartGame} />
-          ) : (
-            <Welcome handleAddPlayer={handleAddPlayer} error={error} />
-          )}
-        </>
-      )}
+      {(!showLobby && !gameStarted) && <Welcome handleAddPlayer={handleAddPlayer} error={error} displayWaitingRoom={() => setShowLobby(true)} />}
+      {(showLobby && !gameStarted) && <WaitingRoom handleStartGame={handleStartGame} />}
+      {(gameStarted && localPlayer.id) && <Game />}
     </>
   );
 }

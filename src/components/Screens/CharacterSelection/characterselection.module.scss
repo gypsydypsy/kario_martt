@@ -1,6 +1,6 @@
 @import "../../../styles/utils/utils";
 
-.welcome {
+.selection {
   background-image: url("../../../../public/images/welcome_bg.jpeg");
   background-size: cover;
   background-position: center;
@@ -9,11 +9,15 @@
   left: 0;
   height: 100%;
   width: 100%;
+  padding: 2vh 0; 
+
   h1 {
     text-align: center;
     font-family: $fontMario;
-    font-size: 65px;
-    margin-top: -35px;
+    font-size: 8vh;
+    margin-bottom: 3vh; 
+    margin-top: 0; 
+
     filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black)
       drop-shadow(1px -1px 1px black) drop-shadow(-1px 1px 1px black);
 
@@ -56,11 +60,13 @@
   }
 
   &_form {
-    padding: 50px;
+    padding: 4vh;
     background-color: rgba(0, 0, 0, 0.5);
     border: solid 2px rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    width: 570px;
+    width: calc(63vh + 20px);
+    height: 65vh; 
+    margin: auto; 
 
     &_field {
       width: 100%;
@@ -70,11 +76,12 @@
         display: block;
         color: white;
         margin-bottom: 10px;
+        font-size: 2.5vh 
       }
 
       input {
         width: 100%;
-        height: 50px;
+        height: 7vh;
         border-radius: 5px;
         border: solid 2px white;
         background-color: rgba(255, 255, 255, 0.8);
@@ -83,7 +90,7 @@
       }
 
       & + & {
-        margin-top: 35px;
+        margin-top: 3vh;
       }
     }
 
@@ -94,8 +101,8 @@
     }
 
     &_character {
-      height: 145px;
-      width: calc((100% - 20px) / 3);
+      height: 18vh;
+      width: 18vh;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -115,13 +122,13 @@
   }
 
   &_submit {
-    margin-top: 40px;
+    margin-top: 3vh;
 
     button {
       color: white;
       font-family: $fontMario;
-      font-size: 50px;
-      padding: 10px 20px;
+      font-size: 7vh;
+      padding: 1vh 2vh;
       text-transform: uppercase;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.5);
@@ -148,5 +155,13 @@
         }
       }
     }
+  }
+
+  &_error {
+    display: block;
+    margin-top: 5px; 
+    color: red; 
+    font-weight: bold;
+    text-align: center;
   }
 }

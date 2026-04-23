@@ -54,9 +54,9 @@ app.prepare().then(() => {
           status: "Failed",
           message:
             players.length >= 6
-              ? "Maximum number reached"
+              ? "Maximum number of player reached"
               : gameStatus.started
-              ? "Game already started"
+              ? "A Game is already running, please wait..."
               : "Something went wrong",
         };
       }
